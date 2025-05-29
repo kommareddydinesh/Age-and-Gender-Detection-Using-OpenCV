@@ -38,39 +38,34 @@ You need the following model files for the program to work. Place all of them in
    cd age-gender-detection
 
 2. **Install required Python packages**
-   
- ```bash
+--- ```bash
 pip install opencv-python matplotlib
 
-3. **Place the model files**
+3.  **Place the model files**
+   Download all the required model files (see above) and place them in the project folder.
 
-Download all the required model files (see above) and place them in the project folder.
 
-4. **Prepare your input image**
+4.  **Prepare your input image**
+  Update the `image_path` variable in `Age.py` with the full path to your input image.
 
-Update the image_path variable in Age.py with the full path to your input image.
 
-5. **Run the script**
-   ```bash
-    python Age.py
+5.  **Run the script**
+--- ```bash
+   python Age.py
+
 6.  **View the results**
-   A window will pop up displaying the image with detected faces, predicted ages, and genders.
+A window will pop up displaying the image with detected faces, predicted ages, and genders.
+How It Works
 
-
-## **How It Works**
-
+## How It Works
 Uses OpenCV DNN to load the face detection model and detect faces.
 For each detected face, extracts the region of interest (ROI).
 Passes the ROI through pre-trained age and gender models.
 Annotates the image with bounding boxes and labels.
 
-## **Troubleshooting**
+
+## Troubleshooting
 Make sure all model files are in the correct directory and paths in the code are accurate.
 Verify OpenCV version (4.2+ recommended).
 If you encounter file not found errors, double-check model filenames and locations.
 For any OpenCV DNN errors, verify model compatibility.
-
-## **References**
-OpenCV DNN Face Detector
-Age and Gender Classification
-OpenCV Documentation
