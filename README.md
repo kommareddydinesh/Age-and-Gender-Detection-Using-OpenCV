@@ -11,9 +11,62 @@ This project demonstrates age and gender detection on images using OpenCV's deep
 - Draws bounding boxes and labels on the image showing the predicted age and gender.
 
 ---
+## Face Detection Model:
+
+opencv_face_detector.pbtxt
+
+opencv_face_detector_uint8.pb
+
+## Age Detection Model:
+
+age_deploy.prototxt
+
+age_net.caffemodel
+
+## Gender Detection Model:
+
+gender_deploy.prototxt
+
+gender_net.caffemodel
+
+## 📁 Age and Gender Detection using OpenCV in python/
+This is your main project folder.
+Age and Gender Detection using OpenCV in python/
+│
+├── Age.py
+├── opencv_face_detector.pbtxt
+├── opencv_face_detector_uint8.pb
+├── age_deploy.prototxt
+├── age_net.caffemodel
+├── gender_deploy.prototxt
+└── gender_net.caffemodel
+
+## 🐍 Age.py
+This is your main Python script.
+It uses OpenCV’s Deep Neural Network (dnn) module to:
+Detect faces
+Predict age and gender using pretrained models
+
+## 🤖 Model Files
+🧠 Face Detection
+opencv_face_detector.pbtxt
+→ Configuration file for the face detector.
+opencv_face_detector_uint8.pb
+→ Pretrained TensorFlow model (protobuf format) for face detection.
+
+## 👶 Age Detection
+age_deploy.prototxt
+→ Architecture/config file for the age detection model.
+age_net.caffemodel
+→ Pretrained Caffe model for predicting age from faces.
+
+## 👨‍🦰 Gender Detection
+gender_deploy.prototxt
+→ Architecture/config file for the gender detection model.
+gender_net.caffemodel
+→ Pretrained Caffe model for gender classification.
 
 ## Model Files
-
 You need the following model files for the program to work. Place all of them in the same directory as the script:
 
 | Model File                     | Description                     | Download Link                                            |
@@ -26,7 +79,6 @@ You need the following model files for the program to work. Place all of them in
 | `gender_net.caffemodel`           | Gender detection model weights file | [Download Link](https://github.com/spmallick/learnopencv/blob/master/AgeGender/gender_net.caffemodel) |
 
 > **Note:** Some links might point to `.caffemodel` or `.pb` files; ensure you download the correct files and rename if necessary.
-
 ---
 
 ## Setup and Usage
@@ -69,3 +121,21 @@ Make sure all model files are in the correct directory and paths in the code are
 Verify OpenCV version (4.2+ recommended).
 If you encounter file not found errors, double-check model filenames and locations.
 For any OpenCV DNN errors, verify model compatibility.
+
+
+> **Note:** Two files are not available
+1.age_net.caffemodel
+2.gender_net.caffemodel
+> Download from browser(links are above)
+---
+
+## 🔁 Summary
+| File                            | Purpose                      |
+| ------------------------------- | ---------------------------- |
+| `Age.py`                        | Main script to run detection |
+| `opencv_face_detector.pbtxt`    | Face detection config        |
+| `opencv_face_detector_uint8.pb` | Face detection model         |
+| `age_deploy.prototxt`           | Age model config             |
+| `age_net.caffemodel`            | Pretrained age model         |
+| `gender_deploy.prototxt`        | Gender model config          |
+| `gender_net.caffemodel`         | Pretrained gender model      |
