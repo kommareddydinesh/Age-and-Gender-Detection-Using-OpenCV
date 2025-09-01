@@ -32,14 +32,14 @@ gender_net.caffemodel
 ## 📁 Age and Gender Detection using OpenCV in python/
 This is your main project folder.
 Age and Gender Detection using OpenCV in python/
-    ```│
-├── Age.py
-├── opencv_face_detector.pbtxt
-├── opencv_face_detector_uint8.pb
-├── age_deploy.prototxt
-├── age_net.caffemodel
-├── gender_deploy.prototxt
-└── gender_net.caffemodel
+    ```bash │
+            ├── Age.py
+            ├── opencv_face_detector.pbtxt
+            ├── opencv_face_detector_uint8.pb
+            ├── age_deploy.prototxt
+            ├── age_net.caffemodel
+            ├── gender_deploy.prototxt
+                  └── gender_net.caffemodel
 
 ## 🐍 Age.py
 This is your main Python script.
